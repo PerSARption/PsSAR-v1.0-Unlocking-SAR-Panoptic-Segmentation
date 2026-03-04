@@ -18,9 +18,162 @@ Liang Zhang, Ziyu Lin, Chenyue Liu, Sai Ma, Zizhuo Teng, Enling Wu, Xingyu Jiao,
 ### Contributions
 We propose the first public SAR panoptic segmentation dataset, named PsSAR-v1.0. Derived from HRSID, this dataset contains 5604       high resolution SAR images and their corresponding annotationsfor panoptic segmentation tasks. Based on PsSAR-v1.0, we constructs a bench-mark and conducts evaluations on SOTA panoptic segmen-tation models.
 
-### Pipeline
+### PsSAR-v1.0 Performance
+<table style="text-align: center; caption-side: top; margin:auto; border-collapse: collapse;">
+  <caption><b> Performance of PsSAR-v1 </b></caption>
+  <thead>
+    <tr>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd;">Benchmark Method</th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd;">Backbone Network</th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd;">Category</th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd;">PQ(%)</th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd;">SQ(%)</th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd;">RQ(%)</th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd;">Model Size</th>
+      <th style="text-align:center; padding:8px; border:1px solid #ddd;">Latency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Maskformer - ResNet-50 -->
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3"><b>Maskformer</b></td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">ResNet-50</td>
+      <td style="padding:8px; border:1px solid #ddd;">Overall</td>
+      <td style="padding:8px; border:1px solid #ddd;">63.96</td>
+      <td style="padding:8px; border:1px solid #ddd;">86.368</td>
+      <td style="padding:8px; border:1px solid #ddd;">72.267</td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">523MB</td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">0.2437s</td>
+    </tr>
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd;">Ship</td>
+      <td style="padding:8px; border:1px solid #ddd;">54.117</td>
+      <td style="padding:8px; border:1px solid #ddd;">83.077</td>
+      <td style="padding:8px; border:1px solid #ddd;">65.141</td>
+    </tr>
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd;">Land and Sea</td>
+      <td style="padding:8px; border:1px solid #ddd;">68.881</td>
+      <td style="padding:8px; border:1px solid #ddd;">88.014</td>
+      <td style="padding:8px; border:1px solid #ddd;">75.83</td>
+	</tr>
+    <!-- Panoptic FPN - ResNet-50+FPN -->
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="6"><b>Panoptic FPN</b></td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">ResNet-50+FPN</td>
+      <td style="padding:8px; border:1px solid #ddd;">Overall</td>
+      <td style="padding:8px; border:1px solid #ddd;">66.427</td>
+      <td style="padding:8px; border:1px solid #ddd;">85.415</td>
+      <td style="padding:8px; border:1px solid #ddd;">75.749</td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">350MB</td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">0.1622s</td>
+    </tr>
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd;">Ship</td>
+      <td style="padding:8px; border:1px solid #ddd;">66.482</td>
+      <td style="padding:8px; border:1px solid #ddd;">83.440</td>
+      <td style="padding:8px; border:1px solid #ddd;">79.677</td>
+    </tr>
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd;">Land and Sea</td>
+      <td style="padding:8px; border:1px solid #ddd;">66.400</td>
+      <td style="padding:8px; border:1px solid #ddd;">86.403</td>
+      <td style="padding:8px; border:1px solid #ddd;">73.786</td>
+    </tr>
+    <!-- Panoptic FPN - ResNet-101+FPN -->
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">ResNet-101+FPN</td>
+      <td style="padding:8px; border:1px solid #ddd;">Overall</td>
+      <td style="padding:8px; border:1px solid #ddd;">67.864</td>
+      <td style="padding:8px; border:1px solid #ddd;">85.847</td>
+      <td style="padding:8px; border:1px solid #ddd;">77.160</td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">495MB</td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">0.1205s</td>
+    </tr>
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd;">Ship</td>
+      <td style="padding:8px; border:1px solid #ddd;">68.573</td>
+      <td style="padding:8px; border:1px solid #ddd;">83.974</td>
+      <td style="padding:8px; border:1px solid #ddd;">81.660</td>
+    </tr>
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd;">Land and Sea</td>
+      <td style="padding:8px; border:1px solid #ddd;">67.510</td>
+      <td style="padding:8px; border:1px solid #ddd;">86.784</td>
+      <td style="padding:8px; border:1px solid #ddd;">74.910</td>
+    </tr>
+    <!-- Mask2former - ResNet-50 -->
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="6"><b>Mask2former</b></td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">ResNet-50</td>
+      <td style="padding:8px; border:1px solid #ddd;">Overall</td>
+      <td style="padding:8px; border:1px solid #ddd;">68.783</td>
+      <td style="padding:8px; border:1px solid #ddd;">88.235</td>
+      <td style="padding:8px; border:1px solid #ddd;">76.866</td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">595MB</td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">0.2256s</td>
+    </tr>
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd;">Ship</td>
+      <td style="padding:8px; border:1px solid #ddd;">62.692</td>
+      <td style="padding:8px; border:1px solid #ddd;">82.694</td>
+      <td style="padding:8px; border:1px solid #ddd;">75.813</td>
+    </tr>
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd;">Land and Sea</td>
+      <td style="padding:8px; border:1px solid #ddd;">71.829</td>
+      <td style="padding:8px; border:1px solid #ddd;">91.006</td>
+      <td style="padding:8px; border:1px solid #ddd;">77.392</td>
+    </tr>
+    <!-- Mask2former - ResNet-101 -->
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">ResNet-101</td>
+      <td style="padding:8px; border:1px solid #ddd;">Overall</td>
+      <td style="padding:8px; border:1px solid #ddd;">68.814</td>
+      <td style="padding:8px; border:1px solid #ddd;">88.405</td>
+      <td style="padding:8px; border:1px solid #ddd;">76.790</td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">798MB</td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">0.2592s</td>
+    </tr>
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd;">Ship</td>
+      <td style="padding:8px; border:1px solid #ddd;">62.797</td>
+      <td style="padding:8px; border:1px solid #ddd;">82.844</td>
+      <td style="padding:8px; border:1px solid #ddd;">75.801</td>
+    </tr>
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd;">Land and Sea</td>
+      <td style="padding:8px; border:1px solid #ddd;">71.822</td>
+      <td style="padding:8px; border:1px solid #ddd;">91.186</td>
+      <td style="padding:8px; border:1px solid #ddd;">77.285</td>
+    </tr>
+    <!-- Panoptic-DeepLab - ResNet-52-DC5 -->
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3"><b>Panoptic-DeepLab</b></td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">ResNet-52-DC5</td>
+      <td style="padding:8px; border:1px solid #ddd;">Overall</td>
+      <td style="padding:8px; border:1px solid #ddd;">61.055</td>
+      <td style="padding:8px; border:1px solid #ddd;">84.874</td>
+      <td style="padding:8px; border:1px solid #ddd;">70.288</td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">699MB</td>
+      <td style="padding:8px; border:1px solid #ddd; vertical-align:middle;" rowspan="3">0.0359s</td>
+    </tr>
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd;">Ship</td>
+      <td style="padding:8px; border:1px solid #ddd;">47.416</td>
+      <td style="padding:8px; border:1px solid #ddd;">74.703</td>
+      <td style="padding:8px; border:1px solid #ddd;">63.473</td>
+    </tr>
+    <tr align="center">
+      <td style="padding:8px; border:1px solid #ddd;">Land and Sea</td>
+      <td style="padding:8px; border:1px solid #ddd;">67.874</td>
+      <td style="padding:8px; border:1px solid #ddd;">89.959</td>
+      <td style="padding:8px; border:1px solid #ddd;">73.695</td>
+    </tr>
+  </tbody>
+</table>
 
-### NAUTILUS Performance
+   
 
 ## Install
 Please refer to [Installation](https://mmdetection.readthedocs.io/en/latest/get_started.html) for installation instructions.
