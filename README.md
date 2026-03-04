@@ -143,6 +143,14 @@ python tools/train.py configs/panoptic_fpn/panoptic-fpn_r50_fpn_1x_ship_1.py
   </tbody>
 </table>
 
+## Evaluation
+
+We used the CocoPanopticMetric evaluation metric class built into the MMDetection framework, for evaluating the performance of PsSAR-v1.0.
+```shell
+# for evaluation
+bash mmdet/evaluation/metrics/coco_panoptic_metric.py
+```
+
 ## Acknowledgement
 Sincere acknowledgment to the amazing open-source community for their great contributions:
 - [MMDetection](https://github.com/open-mmlab/mmdetection): for the excellent open source object detection toolbox.
