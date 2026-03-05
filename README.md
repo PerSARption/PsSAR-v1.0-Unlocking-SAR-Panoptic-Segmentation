@@ -305,5 +305,6 @@ bash mmdet/evaluation/metrics/coco_panoptic_metric.py
 ## Acknowledgement
 Sincere acknowledgment to the amazing open-source community for their great contributions:
 - [MMDetection](https://github.com/open-mmlab/mmdetection): for the excellent open source object detection toolbox.
-- [HRSID](https://github.com/chaozhong2010/HRSID): for providing strong and reliable support for the experimental validation.
 - [detectron2](https://github.com/facebookresearch/detectron2): for the state-of-the-art detection and segmentation algorithms.
+- [HRSID](https://github.com/chaozhong2010/HRSID): PsSAR-v1.0 is built upon the HRSID dataset
+
