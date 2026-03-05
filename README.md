@@ -1,7 +1,7 @@
 <div align="center">
 <h1>PsSAR-v1.0-Unlocking-SAR-Panoptic-Segmentation</h1>
 
-Liang Zhang, Ziyu Lin, Chenyue Liu, Sai Ma, Zizhuo Teng, Enling Wu, Xingyu Jiao, Jiayi Song, Lihan Wang, Pingling Fang, Xin Zhang*  > (*Corresponding author)
+Liang Zhang, Ziyu Lin, Chenyue Liu, Sai Ma, Zizhuo Teng, Enling Wu, Xingyu Jiao, Jiayi Song, Lihan Wang, Pingling Fang, Xin Zhang* (*Corresponding author)
 
 </div>
 
