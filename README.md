@@ -243,7 +243,7 @@ python tools/train.py configs/panoptic_fpn/panoptic-fpn_r50_fpn_1x_ship_1.py
     <tr>
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">Maskformer</td>
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">resnet-50</td>
-      <td><a href="./configs/mmdetection/maskformer/maskformer_r50_ms-16xb1-75e_ship.py" target="_blank">config</a></td>
+      <td><a href="./configs/maskformer_r50_ms-16xb1-75e_ship.py" target="_blank">config</a></td>
       <td><a href="https://pan.baidu.com/s/1dhhaAHXfPrhaWWDH8zOreg?pwd=3fv1" target="_blank">BaiduNetdisk</a></td>
       <td style="padding: 8px; border: 1px solid #ddd;"></td>
       <td style="padding: 8px; border: 1px solid #ddd;"></td>
@@ -252,7 +252,7 @@ python tools/train.py configs/panoptic_fpn/panoptic-fpn_r50_fpn_1x_ship_1.py
     <tr>
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left; vertical-align: middle;" rowspan="2">Panoptic FPN</td>
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">resnet-50+FPN</td>
-      <td><a href="./configs/mmdetection/Panoptic-FPN/panoptic-fpn_r50_fpn_1x_ship_1.py" target="_blank">config</a></td>
+      <td><a href="./configs/panoptic-fpn_r50_fpn_1x_ship_1.py" target="_blank">config</a></td>
       <td><a href="https://pan.baidu.com/s/1dhhaAHXfPrhaWWDH8zOreg?pwd=3fv1" target="_blank">BaiduNetdisk</a></td>
       <td style="padding: 8px; border: 1px solid #ddd;"></td>
       <td style="padding: 8px; border: 1px solid #ddd;"></td>
@@ -260,7 +260,7 @@ python tools/train.py configs/panoptic_fpn/panoptic-fpn_r50_fpn_1x_ship_1.py
     <!-- Panoptic FPN 第二行 -->
     <tr>
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">resnet101+FPN</td>
-      <td><a href="./configs/mmdetection/Panoptic-FPN/panoptic-fpn_r101_fpn_1x_ship.py" target="_blank">config</a></td>
+      <td><a href="./configs/panoptic-fpn_r101_fpn_1x_ship.py" target="_blank">config</a></td>
       <td><a href="https://pan.baidu.com/s/1dhhaAHXfPrhaWWDH8zOreg?pwd=3fv1" target="_blank">BaiduNetdisk</a></td>
       <td style="padding: 8px; border: 1px solid #ddd;"></td>
       <td style="padding: 8px; border: 1px solid #ddd;"></td>
@@ -269,7 +269,7 @@ python tools/train.py configs/panoptic_fpn/panoptic-fpn_r50_fpn_1x_ship_1.py
     <tr>
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left; vertical-align: middle;" rowspan="2">Mask2former</td>
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">resnet-50</td>
-      <td><a href="./configs/mmdetection/mask2former/mask2former_r50_8xb2-lsj-50e_ship-panoptic.py" target="_blank">config</a></td>
+      <td><a href="./configs/mask2former_r50_8xb2-lsj-50e_ship-panoptic.py" target="_blank">config</a></td>
       <td><a href="https://pan.baidu.com/s/1dhhaAHXfPrhaWWDH8zOreg?pwd=3fv1" target="_blank">BaiduNetdisk</a></td>
       <td style="padding: 8px; border: 1px solid #ddd;"></td>
       <td style="padding: 8px; border: 1px solid #ddd;"></td>
@@ -277,7 +277,7 @@ python tools/train.py configs/panoptic_fpn/panoptic-fpn_r50_fpn_1x_ship_1.py
     <!-- Mask2former 第二行 -->
     <tr>
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">resnet-101</td>
-      <td><a href="./configs/mmdetection/mask2former/mask2former_r101_8xb2-lsj-50e_ship-panoptic.py" target="_blank">config</a></td>
+      <td><a href="./configs/mask2former_r101_8xb2-lsj-50e_ship-panoptic.py" target="_blank">config</a></td>
       <td><a href="https://pan.baidu.com/s/1dhhaAHXfPrhaWWDH8zOreg?pwd=3fv1" target="_blank">BaiduNetdisk</a></td>
       <td style="padding: 8px; border: 1px solid #ddd;"></td>
       <td style="padding: 8px; border: 1px solid #ddd;"></td>
