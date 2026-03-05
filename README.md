@@ -210,7 +210,7 @@ Expected directory structure:
 		└── panoptic_train2017
 ```
 ### The pipeline of annotation
-PsSAR-v1.0 dataset is implemented with the Labelme tool. First, a polygon is constructed by taking the four corners of the image as key points to generate an initial mask for the sea area. Next, refined annotation is conducted on the land area to produce a land mask. The existing ship instance annotations from the HRSID dataset are directly adopted to form a set of ship masks. Finally, the land mask and all ship masks are subtracted from the initial sea mask to obtain the final sea mask.
+PsSAR-v1.0 dataset is implemented with the [Labelme](https://github.com/wkentaro/labelme) tool. First, a polygon is constructed by taking the four corners of the image as key points to generate an initial mask for the sea area. Next, refined annotation is conducted on the land area to produce a land mask. The existing ship instance annotations from the HRSID dataset are directly adopted to form a set of ship masks. Finally, the land mask and all ship masks are subtracted from the initial sea mask to obtain the final sea mask.
 
 <div align="center">
     <img src="./ann_pipe.png" width="100%"/>
