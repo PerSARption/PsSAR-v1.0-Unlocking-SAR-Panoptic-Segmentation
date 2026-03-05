@@ -19,7 +19,7 @@ Liang Zhang, Ziyu Lin, Chenyue Liu, Sai Ma, Zizhuo Teng, Enling Wu, Xingyu Jiao,
 
 ## Introduction
 ### Contributions
-We propose the first public SAR panoptic segmentation dataset, named PsSAR-v1.0. Derived from HRSID, this dataset contains 5604       high resolution SAR images and their corresponding annotationsfor panoptic segmentation tasks. Based on PsSAR-v1.0, we constructs a bench-mark and conducts evaluations on SOTA panoptic segmen-tation models.
+We propose the first public SAR panoptic segmentation dataset, named PsSAR-v1.0. Derived from HRSID, this dataset contains 5604 high resolution SAR images and their corresponding annotationsfor panoptic segmentation tasks. Based on PsSAR-v1.0, we constructs a bench-mark and conducts evaluations on SOTA panoptic segmentation models.
 
 ### PsSAR-v1.0 Performance
 <table style="text-align: center; caption-side: top; margin:auto; border-collapse: collapse;">
