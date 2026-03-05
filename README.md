@@ -23,7 +23,6 @@ We propose the first public SAR panoptic segmentation dataset, named PsSAR-v1.0.
 
 ### PsSAR-v1.0 Performance
 <table style="text-align: center; caption-side: top; margin:auto; border-collapse: collapse;">
-  <caption><b> Performance of PsSAR-v1 </b></caption>
   <thead>
     <tr>
       <th style="text-align:center; padding:8px; border:1px solid #ddd;">Benchmark Method</th>
