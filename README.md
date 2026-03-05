@@ -282,15 +282,6 @@ python tools/train.py configs/panoptic_fpn/panoptic-fpn_r50_fpn_1x_ship_1.py
       <td style="padding: 8px; border: 1px solid #ddd;"></td>
       <td style="padding: 8px; border: 1px solid #ddd;"></td>
     </tr>
-    <!-- Panoptic-DeepLab 行 -->
-    <tr>
-      <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">Panoptic-DeepLab</td>
-      <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">resnet-52-DC5</td>
-      <td><a href="https://pan.baidu.com/s/1dhhaAHXfPrhaWWDH8zOreg?pwd=3fv1" target="_blank">BaiduNetdisk</a></td>
-      <td><a href="https://pan.baidu.com/s/1dhhaAHXfPrhaWWDH8zOreg?pwd=3fv1" target="_blank">BaiduNetdisk</a></td>
-      <td style="padding: 8px; border: 1px solid #ddd;"></td>
-      <td style="padding: 8px; border: 1px solid #ddd;"></td>
-    </tr>
   </tbody>
 </table>
 
