@@ -4,7 +4,7 @@
 Liang Zhang, Ziyu Lin, Chenyue Liu, Sai Ma, Zizhuo Teng, Enling Wu, Xingyu Jiao, Jiayi Song, Lihan Wang, Pingling Fang, Xin Zhang* (*Corresponding author)
 
 </div>
-![image](https://github.com/user-attachments/assets/b81002e2-eaf8-4e46-a1ce-59ad54142a00)
+
 
 ## Contents
 - [Introduction](#introduction)
