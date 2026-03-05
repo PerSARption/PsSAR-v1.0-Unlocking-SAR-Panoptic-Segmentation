@@ -179,8 +179,7 @@ We propose the first public SAR panoptic segmentation dataset, named PsSAR-v1.0.
    
 
 ## Install
-Please refer to [Installation](https://mmdetection.readthedocs.io/en/latest/get_started.html) for installation instructions.
-   
+Please refer to [Installation](https://mmdetection.readthedocs.io/en/latest/get_started.html) for the official installation guide of MMdetection.
    **Recommended Environment**  
 - CUDA 12.1
 - PyTorch 2.1.0
