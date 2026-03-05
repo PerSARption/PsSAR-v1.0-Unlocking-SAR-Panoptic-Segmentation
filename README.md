@@ -14,7 +14,7 @@ Liang Zhang, Ziyu Lin, Chenyue Liu, Sai Ma, Zizhuo Teng, Enling Wu, Xingyu Jiao,
 - [Dataset](#dataset)
 - [Train](#train)
 - [Model Weights](#model-weights)
-- [Local Inference](#local-inference)
+- [Inference](#local-inference)
 - [Evaluation](#evaluation)
 
 ## Introduction
@@ -288,7 +288,7 @@ python tools/train.py configs/panoptic_fpn/panoptic-fpn_r50_fpn_1x_ship_1.py
   </tbody>
 </table>
 
-## Local Inference
+## Inference
 ```shell
 cd mmdetection
 python tools/test.py \
