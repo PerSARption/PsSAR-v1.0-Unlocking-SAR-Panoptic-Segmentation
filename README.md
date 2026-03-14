@@ -235,8 +235,6 @@ python tools/train.py configs/panoptic_fpn/panoptic-fpn_r50_fpn_1x_ship_1.py
       <th style="padding: 8px; border: 1px solid #ddd;">model</th>
       <th style="padding: 8px; border: 1px solid #ddd;">backbone network</th>
       <th style="padding: 8px; border: 1px solid #ddd;">config</th>
-      <th style="padding: 8px; border: 1px solid #ddd;">Train log</th>
-      <th style="padding: 8px; border: 1px solid #ddd;">Eval json</th>
     </tr>
   </thead>
   <tbody>
@@ -245,38 +243,28 @@ python tools/train.py configs/panoptic_fpn/panoptic-fpn_r50_fpn_1x_ship_1.py
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">Maskformer</td>
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">resnet-50</td>
       <td><a href="./configs/maskformer_r50_ms-16xb1-75e_ship.py" target="_blank">config</a></td>
-      <td><a href="./logs/maskformer_r50_ms-16xb1-75e_ship.json" target="_blank">logs</a></td>
-      <td><a href="./logs/maskformer_r50_ms-16xb1-75e_ship.json" target="_blank">json</a></td>
     </tr>
     <!-- Panoptic FPN 第一行 -->
     <tr>
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left; vertical-align: middle;" rowspan="2">Panoptic FPN</td>
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">resnet-50+FPN</td>
       <td><a href="./configs/panoptic-fpn_r50_fpn_1x_ship_1.py" target="_blank">config</a></td>
-      <td><a href="./logs/panoptic-fpn_r50_fpn_1x_ship_1.json" target="_blank">logs</a></td>
-      <td><a href="./logs/panoptic-fpn_r50_fpn_1x_ship_1.json" target="_blank">json</a></td>
     </tr>
     <!-- Panoptic FPN 第二行 -->
     <tr>
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">resnet101+FPN</td>
       <td><a href="./configs/panoptic-fpn_r101_fpn_1x_ship.py" target="_blank">config</a></td>
-      <td><a href="./logs/panoptic-fpn_r101_fpn_1x_ship.json" target="_blank">logs</a></td>
-      <td><a href="./logs/panoptic-fpn_r101_fpn_1x_ship.json" target="_blank">json</a></td>
     </tr>
     <!-- Mask2former 第一行 -->
     <tr>
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left; vertical-align: middle;" rowspan="2">Mask2former</td>
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">resnet-50</td>
       <td><a href="./configs/mask2former_r50_8xb2-lsj-50e_ship-panoptic.py" target="_blank">config</a></td>
-      <td><a href="./logs/mask2former_r50_8xb2-lsj-50e_ship-panoptic.json" target="_blank">logs</a></td>
-      <td><a href="./logs/mask2former_r50_8xb2-lsj-50e_ship-panoptic.json" target="_blank">json</a></td>
     </tr>
     <!-- Mask2former 第二行 -->
     <tr>
       <td style="padding: 8px; border: 1px solid #ddd; text-align: left;">resnet-101</td>
       <td><a href="./configs/mask2former_r101_8xb2-lsj-50e_ship-panoptic.py" target="_blank">config</a></td>
-      <td><a href="./logs/mask2former_r101_8xb2-lsj-50e_ship-panoptic.json" target="_blank">logs</a></td>
-      <td><a href="./logs/mask2former_r101_8xb2-lsj-50e_ship-panoptic.json" target="_blank">json</a></td>
     </tr>
   </tbody>
 </table>
