@@ -192,7 +192,7 @@ conda activate pansar
 
 ## Dataset
 #### To download PsSAR-v1.0, , please refer to [PsSAR-v1.0](https://pan.baidu.com/s/1NwGMEajVLTgNYZm07aRSew?pwd=v5za).
-The PsSAR-v1.0 dataset is derived from **HRSID: A High-Resolution SAR Images Dataset for Ship Detection and Instance Segmentation** (GPL-3.0 license). Modifications include the proposal of panoptic segmentation annotations to support panoptic segmentation tasks. The dataset is licensed under GPL-3.0.
+The PsSAR-v1.0 dataset is derived from **HRSID: A High-Resolution SAR Images Dataset for Ship Detection and Instance Segmentation** (GPL-3.0 license). Modifications include the proposal of panoptic segmentation annotations to support panoptic segmentation tasks. The dataset is licensed under GPL-3.0. （See [README_DATASET.md](https://github.com/PerSARption/PsSAR-v1.0-Unlocking-SAR-Panoptic-Segmentation/blob/main/README_DATASET.md)）
 
 ### Directory Structure of the Dataset
 PsSAR-v1.0 follows the **COCO panoptic segmentation standard**.
